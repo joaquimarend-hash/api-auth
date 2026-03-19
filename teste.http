@@ -1,0 +1,80 @@
+
+###HEALTH
+GET http://localhost:3000/health
+
+
+###Create
+POST http://localhost:3000/user 
+Content-Type: application/json
+
+{
+    "name":"Joaquim",
+    "email":"joaquim@gmail.com",
+    "password":"1111"
+}
+###
+///////////////////////////////////////////////
+///LOGIN
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email":"joaquim@gmail.com",
+    "password":"1111"
+}
+
+### GetAll
+GET http://localhost:3000/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImVtYWlsIjoiam9hcXVpbUBnbWFpbC5jb20iLCJpYXQiOjE3NzM4NjQ4NDEsImV4cCI6MTc3Mzg2ODQ0MX0.5NLDEmCro6Dbfh1X6d77pimxrLadsdToqOwQHiV7BdM
+
+### GetById
+GET http://localhost:3000/user/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoidGVhZ29AZ21haWwuY29tIiwiaWF0IjoxNzczODUzMjYzLCJleHAiOjE3NzM4NTY4NjN9.PzN-5mul91Bz6miUyZcIS-uA3JNXc6rQtknOQgw5n2c
+
+### Delete
+DELETE  http://localhost:3000/user/4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoidGVhZ29AZ21haWwuY29tIiwiaWF0IjoxNzczODUzMjYzLCJleHAiOjE3NzM4NTY4NjN9.PzN-5mul91Bz6miUyZcIS-uA3JNXc6rQtknOQgw5n2c
+
+### Update
+PUT  http://localhost:3000/user/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoidGVhZ29AZ21haWwuY29tIiwiaWF0IjoxNzczODUzMjYzLCJleHAiOjE3NzM4NTY4NjN9.PzN-5mul91Bz6miUyZcIS-uA3JNXc6rQtknOQgw5n2c
+Content-Type: application/json
+
+{
+    "name":"Theago",
+    "email":"teago@gmail.com"
+}
+###
+/////////////////////////////////////////
+
+###Create
+POST  http://localhost:3000/post/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImVtYWlsIjoiam9hcXVpbUBnbWFpbC5jb20iLCJpYXQiOjE3NzM4NTYyODAsImV4cCI6MTc3Mzg1OTg4MH0.6TAnKPEqWhc3rEs8ageukMTlnCc6X_LglDX5DV2f12g
+
+{
+    "title": "titulo5",
+    "content": "content5"
+}
+
+### GetAll
+GET http://localhost:3000/post
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImVtYWlsIjoiam9hcXVpbUBnbWFpbC5jb20iLCJpYXQiOjE3NzM4NjQ4NDEsImV4cCI6MTc3Mzg2ODQ0MX0.5NLDEmCro6Dbfh1X6d77pimxrLadsdToqOwQHiV7BdM
+
+###GetById
+GET http://localhost:3000/post/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoidGVhZ29AZ21haWwuY29tIiwiaWF0IjoxNzczODUzMjYzLCJleHAiOjE3NzM4NTY4NjN9.PzN-5mul91Bz6miUyZcIS-uA3JNXc6rQtknOQgw5n2c
+
+### Delete
+DELETE  http://localhost:3000/post/8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoidGVhZ29AZ21haWwuY29tIiwiaWF0IjoxNzczODUzMjYzLCJleHAiOjE3NzM4NTY4NjN9.PzN-5mul91Bz6miUyZcIS-uA3JNXc6rQtknOQgw5n2c
+
+### Update
+PUT  http://localhost:3000/post/9
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoidGVhZ29AZ21haWwuY29tIiwiaWF0IjoxNzczODUzMjYzLCJleHAiOjE3NzM4NTY4NjN9.PzN-5mul91Bz6miUyZcIS-uA3JNXc6rQtknOQgw5n2c
+Content-Type: application/json
+
+{
+    "title": "titulo0",
+    "content": "content0"
+}
